@@ -828,6 +828,7 @@ Streaming systems provide the event transport and analytics foundation for telem
 
 **Security regression gate:** Keep adversarial prompts, tool-permission cases, data-exfiltration fixtures, and sandbox-escape attempts versioned alongside the application. Run them against every model, prompt, policy, and tool change; fail closed on missing evidence; and preserve the trace, policy decision, and artifact versions needed to replay a failure. Security tests that only run before launch are a fire drill, not a control.
 
+- [HOL Guard](https://hol.org/guard): Apache-2.0 local runtime policy checks for supported AI coding agents, reviewing shell commands, file access, package installs, and MCP tool calls before execution.
 - [cc-safety-net](https://github.com/kenryu42/cc-safety-net): Pre-execution guard for AI coding agents that blocks destructive Git and filesystem commands and sensitive-file access across popular agent CLIs.
 - [Fast LLM Security Guardrails](https://github.com/ZenGuard-AI/fast-llm-security-guardrails): Low-latency trust layer for screening and enforcing security policies around AI-agent and LLM interactions.
 - [Falco](https://github.com/falcosecurity/falco): CNCF runtime security tool for detecting suspicious behavior in containers and Kubernetes.
